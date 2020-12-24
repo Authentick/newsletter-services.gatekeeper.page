@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "newsletter-service",
+  "version": "1.0.0",
+  "description": "Sendgrid newsletter with double opt-in",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "Lukas Reschke <lukas@statuscode.ch>",
+  "license": "AGPL",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
