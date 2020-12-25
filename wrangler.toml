@@ -4,6 +4,6 @@ account_id = "8724fe10846ce87d7849f1d7651845b2"
 kv_namespaces = [
   { binding = "NEWSLETTER_SUBSCRIBER_LIST", id = "d7e766ada85f4b6b8d66806f6bbd180b", preview_id = "d7e766ada85f4b6b8d66806f6bbd180b" },
 ]
-vars = {LIST_ID = "7702dc95-5d54-44d2-8dfc-68b0f4be4015", TEMPLATE_ID = "d-5c46895777bb4c67a98c370b3f48940a",SUCCESS_PAGE = "https://gatekeeper.page/newsletter-subscribed"}
+vars = {LIST_ID = "7702dc95-5d54-44d2-8dfc-68b0f4be4015", TEMPLATE_ID = "d-5c46895777bb4c67a98c370b3f48940a",SUCCESS_PAGE = "https://gatekeeper.page/en/newsletter-subscribed/"}
 route = "newsletter-services.gatekeeper.page/*"
 zone_id = "310b603f43ecd9b9835cc9b1f674dc12"
