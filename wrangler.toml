@@ -1,7 +1,6 @@
 name = "newsletter"
 type = "javascript"
 account_id = "8724fe10846ce87d7849f1d7651845b2"
-workers_dev = true
 kv_namespaces = [
   { binding = "NEWSLETTER_SUBSCRIBER_LIST", id = "d7e766ada85f4b6b8d66806f6bbd180b", preview_id = "d7e766ada85f4b6b8d66806f6bbd180b" },
 ]
