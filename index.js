@@ -132,7 +132,7 @@ async function handleRequest(request) {
   const requestUrl = new URL(request.url)
 
   if (requestUrl.pathname == '/subscribe') {
-    const email = requestUrl.searchParams.get('email')
+    let email = requestUrl.searchParams.get('email')
 
     if (email == null) {
       return new Response(
@@ -142,6 +142,8 @@ async function handleRequest(request) {
         ),
       )
     }
+    
+    email = email.toLowerCase()
 
     const isAlreadySubscribed = await isUserAlreadyRegistered(email)
 
@@ -156,7 +158,7 @@ async function handleRequest(request) {
   }
 
   if (requestUrl.pathname == '/confirm') {
-    const email = requestUrl.searchParams.get('email')
+    const email = requestUrl.searchParams.get('email').toLowerCase()
     const signature = requestUrl.searchParams.get('code')
 
     const isValidSignatureResult = await isValidSignature(email, signature)
